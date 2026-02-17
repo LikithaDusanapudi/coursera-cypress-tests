@@ -1,0 +1,30 @@
+[
+  {
+    "firstName": "abc",
+    "lastName": "def",
+    "email": "invalid@",     
+    "phone": "1234567890",
+    "institutionType": "University/4 Year College",
+    "company": "xyz",
+    "title": "CEO",
+    "department": "International",
+    "needs": "Learner Support",
+    "country": "India",
+    "state": "Goa",
+    "expectedError": true
+  },
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com", 
+    "phone": "9876543210",
+    "institutionType": "University/4 Year College",
+    "company": "ABC University",
+    "title": "Dean",
+    "department": "Academic Affairs",
+    "needs": "Courses for myself",
+    "country": "India",
+    "state": "Delhi",
+    "expectedError": false
+  }
+]
