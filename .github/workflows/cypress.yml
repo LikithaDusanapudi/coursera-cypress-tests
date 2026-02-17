@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4   # also updated to v4 for checkout
+        uses: actions/checkout@v4   # updated to v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4 # updated to v4
         with:
           # Pin Node.js to avoid loader error with Cypress 15.10.0
           node-version: 18.18.0
@@ -27,7 +27,7 @@ jobs:
         run: npx cypress run
 
       - name: Upload test report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4 # updated to v4
         with:
           name: cypress-report
           path: cypress/reports
