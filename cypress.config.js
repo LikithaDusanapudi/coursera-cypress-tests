@@ -3,8 +3,15 @@ const { defineConfig } = require('cypress')
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here if needed
+      // const { plugin: cypressGrepPlugin } = require('@cypress/grep/plugin')
+      // cypressGrepPlugin(config)
+      // return config
     },
+    video: true,                  // record videos on run
+    screenshotOnRunFailure: true, // take screenshots on failure
+  },
+  env: {
+    grepFilterSpecs: true         // enable grep filtering
   },
   reporter: 'mochawesome',
   reporterOptions: {
@@ -12,10 +19,5 @@ module.exports = defineConfig({
     overwrite: false,
     html: true,
     json: true
-  },
-  screenshotsFolder: 'cypress/screenshots',   // screenshots saved here
-  videosFolder: 'cypress/videos',             // videos saved here
-  screenshotOnRunFailure: true,               // auto screenshot on failure
-  video: true,                                // record videos
-  trashAssetsBeforeRuns: true                 // clean old assets before new run
+  }
 })

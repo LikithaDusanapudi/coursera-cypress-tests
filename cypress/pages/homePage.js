@@ -1,13 +1,18 @@
+// cypress/pages/homePage.js
 class HomePage {
   searchInput = '[data-testid="search-autocomplete-input"]'
-  searchButton = '[data-testid="search-search-button"]'
 
   visit() {
-    cy.visit('https://www.coursera.org')
+    cy.visit('https://www.coursera.org/')
+    cy.viewport(1200, 900)
+    // wait until the search bar is present
+    cy.get(this.searchInput, { timeout: 15000 }).should('exist')
   }
 
   searchCourse(term) {
-    cy.get(this.searchInput).type(`${term}{enter}`, { force: true })
+    cy.get(this.searchInput, { timeout: 15000 })
+      .should('be.visible')
+      .type(`${term}{enter}`)
   }
 }
 

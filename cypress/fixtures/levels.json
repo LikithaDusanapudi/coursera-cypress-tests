@@ -1,4 +1,4 @@
 {
-  "levels": ["Beginner", "Intermediate", "Advanced", "Mixed"],
-  "searchTerm": "Language Learning"
+  "searchTerm": "Web Development",
+  "levels": ["Beginner", "Intermediate", "Advanced"]
 }
