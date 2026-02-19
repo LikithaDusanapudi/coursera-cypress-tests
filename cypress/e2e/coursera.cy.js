@@ -60,6 +60,7 @@ describe('Coursera Project ', () => {
             .then($msg => {
               cy.log(`Error for ${form.email}: ${$msg.text()}`)
               cy.screenshot(`invalid-email-${form.email}`)
+              // expect($msg.text()).to.contain('Invalid')
             })
         } else {
           cy.get('#ValidMsgEmail').should('not.exist')

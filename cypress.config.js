@@ -3,9 +3,7 @@ const { defineConfig } = require('cypress')
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      // const { plugin: cypressGrepPlugin } = require('@cypress/grep/plugin')
-      // cypressGrepPlugin(config)
-      // return config
+  
     },
     video: true,                  // record videos on run
     screenshotOnRunFailure: true, // take screenshots on failure

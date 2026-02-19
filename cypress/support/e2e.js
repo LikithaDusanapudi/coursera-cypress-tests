@@ -19,3 +19,5 @@
 // support/e2e.js
 
 import './commands'
+const { register: registerCypressGrep } = require('@cypress/grep')
+registerCypressGrep()
