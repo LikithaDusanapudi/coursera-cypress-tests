@@ -14,6 +14,8 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+// support/e2e.js
+
+// support/e2e.js
+
 import './commands'
-// const registerCypressGrep = require('@cypress/grep')
-// registerCypressGrep()

@@ -1,4 +1,3 @@
-// cypress/pages/enterprisePage.js
 class EnterprisePage {
   formFields = {
     firstName: '#FirstName',

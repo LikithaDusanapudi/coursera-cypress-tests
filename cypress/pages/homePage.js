@@ -1,4 +1,3 @@
-// cypress/pages/homePage.js
 class HomePage {
   searchInput = '[data-testid="search-autocomplete-input"]'
 

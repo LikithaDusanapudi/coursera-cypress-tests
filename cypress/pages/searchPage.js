@@ -1,4 +1,3 @@
-// cypress/pages/searchPage.js
 class SearchPage {
   languageDropdown = '[data-testid="filter-dropdown-language"]'
   difficultyDropdown = '[data-testid="filter-dropdown-productDifficultyLevel"]'

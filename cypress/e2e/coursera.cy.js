@@ -30,7 +30,7 @@ describe('Coursera Project ', () => {
       data.levels.forEach((level) => {
         result[level] = []
         searchPage.openDifficultyFilter()
-        searchPage.selectDifficulty(level)   // ✅ pass text like "Beginner"
+        searchPage.selectDifficulty(level)   //  pass text like "Beginner"
         searchPage.openLanguageFilter()
         searchPage.extractLanguagesForLevel(level, result)
       })
@@ -46,7 +46,7 @@ describe('Coursera Project ', () => {
     })
   })
 
-  it('Task-03: Enterprise > Campus form with multiple datasets', { tags: '@form' }, () => {
+  it('Task-03: Enterprise > Campus form with multiple datasets', { tags: '@enterprise' }, () => {
     cy.fixture('enterprise').then((datasets) => {
       datasets.forEach((form) => {
         cy.on('uncaught:exception', () => false)
