@@ -5,6 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
   
     },
+    supportFile: 'cypress/support/e2e.js',
     video: true,                  // record videos on run
     screenshotOnRunFailure: true, // take screenshots on failure
   },

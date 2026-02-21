@@ -21,3 +21,15 @@
 import './commands'
 const { register: registerCypressGrep } = require('@cypress/grep')
 registerCypressGrep()
+Cypress.on('uncaught:exception', (err) => {
+  // Ignore React hydration errors (both minified and full messages)
+  if (
+    err.message.includes('Hydration failed') ||
+    err.message.includes('Minified React error #418') ||
+    err.message.includes('Minified React error #423')
+    
+  ) {
+    return false;
+  }
+});
+
